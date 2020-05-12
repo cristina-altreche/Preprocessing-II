@@ -1,1 +1,24 @@
 // Mixins in here
+
+.displayFlex (@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.btn-style (@padding, @font-size, @border) {
+  background: @yellow-bus;
+  outline: none;
+  border: @border;
+  border-radius: 2px;
+  padding: @padding;
+  color: @white;
+  font-size: @font-size;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover {
+    border-color: @white;
+    color: @white;
+  }
+}

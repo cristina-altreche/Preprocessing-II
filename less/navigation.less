@@ -1,1 +1,48 @@
 // Navigation Styles here
+.nav-wrapper {
+  //   background: rgba(1, 0, 0, 0.8);
+  background: rgba(33, 37, 41, 0.7);
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  .displayFlex(space-between, center);
+  position: absolute;
+  z-index: 3;
+
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 3rem;
+    padding: 10px;
+
+    .fa-bus {
+      color: @yellow-bus;
+    }
+
+    span {
+      text-decoration: none;
+      color: @white;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+  }
+  .nav-links {
+    padding: 10px;
+    font-size: 1.8rem;
+
+    a {
+      color: @white;
+      padding: 20px;
+
+      &:hover {
+        background-color: @yellow-bus;
+        color: @white;
+        padding: 20px;
+      }
+    }
+  }
+}
